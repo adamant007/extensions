@@ -1,8 +1,7 @@
 name: 'Auto Assign'
+# Automated triggers paused to conserve GitHub Actions minutes.
 on:
-  pull_request_target:
-    types: [opened, ready_for_review]
-
+  workflow_dispatch:
 jobs:
   add-reviews:
     runs-on: ubuntu-latest

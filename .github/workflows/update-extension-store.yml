@@ -1,12 +1,8 @@
 permissions:
   contents: read
 name: Update Extention Store
+# Automated triggers paused to conserve GitHub Actions minutes.
 on:
-  push:
-    paths:
-      - "extensions.json"
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
